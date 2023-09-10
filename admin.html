@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Admins</title>
+    <script type="module" crossorigin src="/admin-dashboard/assets/bootstrap.min-d89fd3cf.js"></script>
+    <link rel="stylesheet" href="/admin-dashboard/assets/bootstrap-578fcddc.css">
+  </head>
+  <body>
+    <nav class="nav flex-column justify-content-between bg-light">
+  <div>
+    <img class="p-4" src="/admin-dashboard/assets/logo-ANSWER-5336fb45.svg" alt="logo" />
+    <h1 class="d-none">ANSWER</h1>
+    <a class="nav-link link-dark d-flex fw-bold" aria-current="page" href="#">
+      <span class="material-icons me-3"> assessment </span>
+      Dashboard
+    </a>
+
+    <a class="nav-link link-dark d-flex fw-bold" aria-current="page" href="#">
+      <span class="material-icons me-3"> forum </span>
+      Question
+    </a>
+    <a class="nav-link link-dark d-flex fw-bold" aria-current="page" href="#">
+      <span class="material-icons me-3"> assignment </span>
+      Assignment
+    </a>
+    <a
+      class="nav-link link-dark d-flex align-middle fw-bold"
+      aria-current="page"
+      href="#"
+    >
+      <span class="material-icons me-3"> video_library </span>
+      Course
+    </a>
+    <a
+      class="nav-link link-success d-flex active align-middle fw-bold"
+      aria-current="page"
+      href="#"
+    >
+      <span class="material-icons me-3"> supervisor_account </span>
+      Admin
+    </a>
+    <a
+      class="nav-link link-dark d-flex align-middle fw-bold"
+      aria-current="page"
+      href="#"
+    >
+      <span class="material-icons me-3"> settings </span>
+      Settings
+    </a>
+  </div>
+
+     
+
+
+    <div class="mb-4 ms-4 d-flex align-items-center">
+      <img
+        class="nav-avater"
+        alt="user-avater"
+        src="/admin-dashboard/assets/andychen-f14fef59.jpeg"
+      />
+      <div class="">
+        <h3 class="fs-16 fw-bold dark">Andy Chen</h3>
+        <a 
+        href="mailto:andy0401@mail.com"
+        class="d-block text-secondary"
+      >
+        andy0401@mail.com
+      </a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <main class="main">
+  <!--header-->
+  <div class="pb-4 mb-4 d-flex justify-content-between">
+    <!--left-->
+    <div class="d-flex align-items-end">
+      <h2 class="fs-4 me-5 mb-0 fw-bold">Admin</h2>
+
+      <div class="d-flex me-auto align-items-center d-inline-block">
+        <span class="material-icons fs-4 me-8 icon-vertical-align text-success"
+          >add
+        </span>
+        <p class="mb-0 fw-bold">Add New Admin</p>
+      </div>
+    </div>
+    <!--right-->
+    <div class="align-self-center">
+      <a href="#" class="d-inline-block">
+        <span class="material-icons me-4 icon-vertical-align dark">search</span>
+      </a>
+      <a href="#" class="d-inline-block">
+        <span class="material-icons icon-vertical-align dark"
+          >notifications_active</span
+        >
+      </a>
+    </div>
+  </div>
+  <!--table-->
+  <table class="table table-hover">
+    <thead>
+      <tr class="border-bottom">
+        <th scope="col" class="ps-0 fw-bold">
+          ID
+          <span
+            class="material-icons ms-7 align-self-center text-success"
+            style="vertical-align: middle; font-size: 12px"
+          >
+            arrow_downward
+          </span>
+        </th>
+        <th scope="col" class="ps-0 fw-bold">Name</th>
+        <th scope="col" class="ps-0 fw-bold">Email</th>
+        <th scope="col" class="ps-0 fw-bold">Verified</th>
+        <th scope="col" class="ps-0 fw-bold"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#1</th>
+        <td class="ps-0">Emir Wicks</td>
+        <td class="ps-0">emir.wicks@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#2</th>
+        <td class="ps-0">Zaina Goldsmith</td>
+        <td class="ps-0">zaina.goldsmith@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#3</th>
+        <td class="ps-0">Mahima Lopez</td>
+        <td class="ps-0">mahima.lopez@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#4</th>
+        <td class="ps-0">Pharrell Murray</td>
+        <td class="ps-0">pharrell.murray@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#5</th>
+        <td class="ps-0">Annika Mcbride</td>
+        <td class="ps-0">annika.mcbride@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#6</th>
+        <td class="ps-0">Fatimah Clark</td>
+        <td class="ps-0">fatimah.clark@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#7</th>
+        <td class="ps-0">Klaudia Rhodes</td>
+        <td class="ps-0">klaudia.rhodes@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#8</th>
+        <td class="ps-0">Tillie Lucero</td>
+        <td class="ps-0">tillie.lucero@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#9</th>
+        <td class="ps-0">Tillie Lucero</td>
+        <td class="ps-0">sabrina.stephenson@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+
+      <tr class="border-bottom">
+        <th scope="row" class="py-15_5 ps-0">#10</th>
+        <td class="ps-0">Annie Smith</td>
+        <td class="ps-0">annie.smith@mail.com</td>
+        <td class="ps-0">Yes</td>
+        <td class="text-end">
+          <button
+            type="button"
+            class="btn p-0 border-0 d-inline-block me-4 admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#adminDetails"
+          >
+            <span class="material-icons dark"> visibility </span>
+          </button>
+          <button
+            type="button"
+            class="btn btn p-0 border-0 d-inline-block admin-button"
+            data-bs-toggle="modal"
+            data-bs-target="#editAdmin"
+          >
+            <span class="material-icons dark"> edit </span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex d-inline-block mt-auto align-items-end">
+    <ul class="pagination">
+
+      <li class="pagination__first text-success">
+        <span class="material-icons icon-vertical-align">chevron_left</span>
+      </li>
+
+      <li class="pagination__item border-start-0 dark">1</li>
+      <li class="pagination__item border-start-0 dark">2</li>
+      <li class="pagination__item border-start-0 dark">3</li>
+
+      <li class="pagination__last border-start-0 text-success">
+        <span class="material-icons icon-vertical-align">chevron_right</span>
+      </li>
+    
+    </ul>
+  </div></main>
+
+    
+  </body>
+</html>
