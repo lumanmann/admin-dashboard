@@ -1,0 +1,42 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: $gray-900;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+ 
+.main {
+  margin-left: 296px;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 32px;
+}
+
+button {
+  outline:none;  
+}
+
+.btn:hover,.btn:focus,.btn:active, 
+.btn:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+}
+
+
+span:hover {
+  color: $success;
+}

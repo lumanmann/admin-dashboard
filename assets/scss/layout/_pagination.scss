@@ -1,0 +1,40 @@
+.pagination {
+    max-width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+  
+    &__first,
+    &__last,
+    &__item {
+      width: 32px;
+      height: 32px;
+      border: 1px solid $primary;
+      text-align: center;
+    }
+    &__first {
+      border-radius: 2px 0px 0px 2px;
+    }
+    &__last {
+      border-radius: 0px 2px 2px 0px;
+    }
+    &__first:hover,
+    &__last:hover {
+      background-color: $primary;
+      cursor: pointer;
+      span {
+        color: #ffffff;
+      }
+    }
+    &__item:hover {
+      background-color: $primary;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+  .pagination__item:nth-child(2) {
+    background-color: $primary;
+    color: #ffffff;
+  }
+  

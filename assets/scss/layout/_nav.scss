@@ -1,0 +1,33 @@
+.nav {
+  border:1px solid black; 
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+}
+
+.nav-link {
+  padding: 12px 32px;
+  position: relative;
+}
+
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid $primary;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+  position: relative;
+}
+
+.nav-avater {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
